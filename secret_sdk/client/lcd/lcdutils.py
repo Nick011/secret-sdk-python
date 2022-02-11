@@ -103,6 +103,7 @@ class AsyncLCDUtils(BaseAsyncAPI):
         return self.generate_new_key_pair_from_seed(self.generate_new_seed())
 
     async def get_consensus_io_pubkey(self):
+        return None
         io_exch_pubkey = await BaseAsyncAPI._try_await(self._c._get("/reg/tx-key"))
         io_exch_pubkey = io_exch_pubkey["TxKey"]
         consensus_io_pubkey = base64.b64decode(io_exch_pubkey)
