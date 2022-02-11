@@ -62,6 +62,7 @@ $ pip install -U secret-sdk
 Secret SDK uses <a href="https://python-poetry.org/">Poetry</a> to manage dependencies. To get set up with all the required dependencies, run:
 ```
 $ pip install poetry
+$ poetry lock
 $ poetry install
 ```
 
